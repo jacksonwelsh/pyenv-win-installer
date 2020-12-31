@@ -10,4 +10,4 @@ To allow powershell to run this script, first download and unzip this project. T
 
 After that process is complete, simply right-click on `install.ps1` and select "Run with PowerShell" in the context menu. Python and PyEnv will automatically be installed.
 
-You may also run this script by using PowerShell to navigate to this directory and running `.\install.ps1'.
+You may also run this script by using PowerShell to navigate to this directory and running `.\install.ps1`.
