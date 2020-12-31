@@ -3,7 +3,7 @@ Write-Host "Downloading PyEnv..."
 Invoke-WebRequest 'https://github.com/pyenv-win/pyenv-win/archive/master.zip' -OutFile $env:temp/pyenv-win.zip > $null
 
 Expand-Archive -LiteralPath $env:temp\pyenv-win.zip -DestinationPath $env:TEMP\pyenv-win -Force
-if(![System.IO.File]::Exists("${HOME}\.pyenv")){
+if(Test-Path $HOME\.pyenv){
     Write-Host "${HOME}\.pyenv exists, deleting..."
     Remove-Item -Recurse -Force -Path $HOME\.pyenv > $null
 }
